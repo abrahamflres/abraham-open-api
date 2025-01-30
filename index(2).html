@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARWARS API</title>
+    <link rel="stylesheet" href ='style.css'>
+</head>
+<body>
+    
+    <h1>STARWARS</h1>
+    <h2>Character & Species Generator</h2>
+    
+
+    <div id="tab">
+      <button id="charactersTab" onclick="switchTab('Character')" class="active">Character</button>
+      <button id="speciesTab" onclick="switchTab('Species')">Species</button>
+    </div>
+
+    <br>
+
+    <div id="input">
+        <div id = 'CharacterInput'>
+            <label for="CharacterID">Enter CharacterID:</label>
+            <input type="number"  id="CharacterID" placeholder="Enter 1-10 ID">
+            <button onclick="fetchPeopleInfo()">Get Character!</button>
+        </div>
+<br> 
+
+        <div id = 'SpeciesInput' style= "display: none;">
+            <label for="SpeciesID">Enter SpeciesID:</label>
+            <input type="number"  id="SpeciesID" placeholder="Enter 1-10 ID">
+            <button onclick="fetchSpeciesInfo()">Get Species!</button>
+        </div>
+    </div>
+
+    <div id = "result"></div>
+
+  
+
+    <br>
+    <img id='characterImage'src = 'character_id.png' alt = 'characterID' width = "200" height = "200">
+    <img id ='speciesImage'src = 'species_id.png' alt = 'speciesID' width = "200" height = "200" style='display: none;'>
+    
+    <script src = 'function.js'></script>
+
+
+</body>
+</html>
