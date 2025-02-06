@@ -43,3 +43,43 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+
+
+/* Smaller screen adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    #tab {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #tab button {
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 8px;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    img {
+        width: 120px;
+        height: auto;
+    }
+}
