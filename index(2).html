@@ -22,26 +22,164 @@
     <div id="input">
         <div id = 'CharacterInput'>
             <label for="CharacterID">Enter CharacterID:</label>
-            <input type="number"  id="CharacterID" placeholder="Enter 1-10 ID">
+            <input type="number"  id="CharacterID" placeholder="Enter 1-83 ID">
             <button onclick="fetchPeopleInfo()">Get Character!</button>
         </div>
 <br> 
 
         <div id = 'SpeciesInput' style= "display: none;">
             <label for="SpeciesID">Enter SpeciesID:</label>
-            <input type="number"  id="SpeciesID" placeholder="Enter 1-10 ID">
+            <input type="number"  id="SpeciesID" placeholder="Enter 1-37 ID">
             <button onclick="fetchSpeciesInfo()">Get Species!</button>
         </div>
     </div>
 
     <div id = "result"></div>
 
-  
-
     <br>
-    <img id='characterImage'src = 'character_id.png' alt = 'characterID' width = "200" height = "200">
-    <img id ='speciesImage'src = 'species_id.png' alt = 'speciesID' width = "200" height = "200" style='display: none;'>
-    
+    <div id="characterTable"><table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Character Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Luke Skywalker</td></tr>
+            <tr><td>2</td><td>C-3PO</td></tr>
+            <tr><td>3</td><td>R2-D2</td></tr>
+            <tr><td>4</td><td>Darth Vader</td></tr>
+            <tr><td>5</td><td>Leia Organa</td></tr>
+            <tr><td>6</td><td>Owen Lars</td></tr>
+            <tr><td>7</td><td>Beru Whitesun Lars</td></tr>
+            <tr><td>8</td><td>R5-D4</td></tr>
+            <tr><td>9</td><td>Biggs Darklighter</td></tr>
+            <tr><td>10</td><td>Obi-Wan Kenobi</td></tr>
+            <tr><td>11</td><td>Anakin Skywalker</td></tr>
+            <tr><td>12</td><td>Wilhuff Tarkin</td></tr>
+            <tr><td>13</td><td>Chewbacca</td></tr>
+            <tr><td>14</td><td>Han Solo</td></tr>
+            <tr><td>15</td><td>Greedo</td></tr>
+            <tr><td>16</td><td>Jabba Desilijic Tiure</td></tr>
+            <tr><td>18</td><td>Wedge Antilles</td></tr>
+            <tr><td>19</td><td>Jek Tono Porkins</td></tr>
+            <tr><td>20</td><td>Yoda</td></tr>
+            <tr><td>21</td><td>Palpatine</td></tr>
+            <tr><td>22</td><td>Boba Fett</td></tr>
+            <tr><td>23</td><td>IG-88</td></tr>
+            <tr><td>24</td><td>Bossk</td></tr>
+            <tr><td>25</td><td>Lando Calrissian</td></tr>
+            <tr><td>26</td><td>Lobot</td></tr>
+            <tr><td>27</td><td>Ackbar</td></tr>
+            <tr><td>28</td><td>Mon Mothma</td></tr>
+            <tr><td>29</td><td>Arvel Crynyd</td></tr>
+            <tr><td>30</td><td>Wicket Systri Warrick</td></tr>
+            <tr><td>31</td><td>Nien Nunb</td></tr>
+            <tr><td>32</td><td>Qui-Gon Jinn</td></tr>
+            <tr><td>33</td><td>Nute Gunray</td></tr>
+            <tr><td>34</td><td>Finis Valorum</td></tr>
+            <tr><td>35</td><td>Padmé Amidala</td></tr>
+            <tr><td>36</td><td>Jar Jar Binks</td></tr>
+            <tr><td>37</td><td>Roos Tarpals</td></tr>
+            <tr><td>38</td><td>Rugor Nass</td></tr>
+            <tr><td>39</td><td>Ric Olié</td></tr>
+            <tr><td>40</td><td>Watto</td></tr>
+            <tr><td>41</td><td>Sebulba</td></tr>
+            <tr><td>42</td><td>Quarsh Panaka</td></tr>
+            <tr><td>43</td><td>Shmi Skywalker</td></tr>
+            <tr><td>44</td><td>Darth Maul</td></tr>
+            <tr><td>45</td><td>Bib Fortuna</td></tr>
+            <tr><td>46</td><td>Aayla Secura</td></tr>
+            <tr><td>47</td><td>Ratts Tyerell</td></tr>
+            <tr><td>48</td><td>Dud Bolt</td></tr>
+            <tr><td>49</td><td>Gasgano</td></tr>
+            <tr><td>50</td><td>Ben Quadinaros</td></tr>
+            <tr><td>51</td><td>Mace Windu</td></tr>
+            <tr><td>52</td><td>Ki-Adi-Mundi</td></tr>
+            <tr><td>53</td><td>Kit Fisto</td></tr>
+            <tr><td>54</td><td>Eeth Koth</td></tr>
+            <tr><td>55</td><td>Adi Gallia</td></tr>
+            <tr><td>56</td><td>Saesee Tiin</td></tr>
+            <tr><td>57</td><td>Yarael Poof</td></tr>
+            <tr><td>58</td><td>Plo Koon</td></tr>
+            <tr><td>59</td><td>Mas Amedda</td></tr>
+            <tr><td>60</td><td>Gregar Typho</td></tr>
+            <tr><td>61</td><td>Cordé</td></tr>
+            <tr><td>62</td><td>Cliegg Lars</td></tr>
+            <tr><td>63</td><td>Poggle the Lesser</td></tr>
+            <tr><td>64</td><td>Luminara Unduli</td></tr>
+            <tr><td>65</td><td>Barriss Offee</td></tr>
+            <tr><td>66</td><td>Dormé</td></tr>
+            <tr><td>67</td><td>Dooku</td></tr>
+            <tr><td>68</td><td>Bail Prestor Organa</td></tr>
+            <tr><td>69</td><td>Jango Fett</td></tr>
+            <tr><td>70</td><td>Zam Wesell</td></tr>
+            <tr><td>71</td><td>Dexter Jettster</td></tr>
+            <tr><td>72</td><td>Lama Su</td></tr>
+            <tr><td>73</td><td>Taun We</td></tr>
+            <tr><td>74</td><td>Jocasta Nu</td></tr>
+            <tr><td>75</td><td>R4-P17</td></tr>
+            <tr><td>76</td><td>Wat Tambor</td></tr>
+            <tr><td>77</td><td>San Hill</td></tr>
+            <tr><td>78</td><td>Shaak Ti</td></tr>
+            <tr><td>79</td><td>Grievous</td></tr>
+            <tr><td>80</td><td>Tarfful</td></tr>
+            <tr><td>81</td><td>Raymus Antilles</td></tr>
+            <tr><td>82</td><td>Sly Moore</td></tr>
+            <tr><td>83</td><td>Tion Medon</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div id ='speciesTable' style= 'display: none;'>
+    <table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Species Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>Human</td></tr>
+        <tr><td>2</td><td>Droid</td></tr>
+        <tr><td>3</td><td>Wookiee</td></tr>
+        <tr><td>4</td><td>Rodian</td></tr>
+        <tr><td>5</td><td>Hutt</td></tr>
+        <tr><td>6</td><td>Yoda's species</td></tr>
+        <tr><td>7</td><td>Trandoshan</td></tr>
+        <tr><td>8</td><td>Mon Calamari</td></tr>
+        <tr><td>9</td><td>Ewok</td></tr>
+        <tr><td>10</td><td>Sullustan</td></tr>
+        <tr><td>11</td><td>Neimoidian</td></tr>
+        <tr><td>12</td><td>Gungan</td></tr>
+        <tr><td>13</td><td>Toydarian</td></tr>
+        <tr><td>14</td><td>Dug</td></tr>
+        <tr><td>15</td><td>Twi'lek</td></tr>
+        <tr><td>16</td><td>Aleena</td></tr>
+        <tr><td>17</td><td>Vulptereen</td></tr>
+        <tr><td>18</td><td>Xexto</td></tr>
+        <tr><td>19</td><td>Toong</td></tr>
+        <tr><td>20</td><td>Cerean</td></tr>
+        <tr><td>21</td><td>Nautolan</td></tr>
+        <tr><td>22</td><td>Iridonian Zabrak</td></tr>
+        <tr><td>23</td><td>Tholothian</td></tr>
+        <tr><td>24</td><td>Iktotchi</td></tr>
+        <tr><td>25</td><td>Quermian</td></tr>
+        <tr><td>26</td><td>Kel Dor</td></tr>
+        <tr><td>27</td><td>Chagrian</td></tr>
+        <tr><td>28</td><td>Geonosian</td></tr>
+        <tr><td>29</td><td>Mirialan</td></tr>
+        <tr><td>30</td><td>Clawdite</td></tr>
+        <tr><td>31</td><td>Besalisk</td></tr>
+        <tr><td>32</td><td>Kaminoan</td></tr>
+        <tr><td>33</td><td>Skakoan</td></tr>
+        <tr><td>34</td><td>Muun</td></tr>
+        <tr><td>35</td><td>Togruta</td></tr>
+        <tr><td>36</td><td>Kaleesh</td></tr>
+        <tr><td>37</td><td>Pau'an</td></tr>
+    </tbody>
+</table>
+</div>
     <script src = 'function.js'></script>
 
 

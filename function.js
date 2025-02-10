@@ -11,10 +11,10 @@ function switchTab(tab){
     result.innerHTML = '';
     if(tab==='Character'){
         characterInput.style.display = "block"
-        characterImage.style.display ="inline"
+        characterTable.style.display ="table"//change
 
         speciesInput.style.display = 'none'
-        speciesImage.style.display='none'
+        speciesTable.style.display='none'
 
         document.getElementById('CharacterID').value = '';
 
@@ -23,10 +23,10 @@ function switchTab(tab){
         
     } else if (tab === 'Species'){
         speciesInput.style.display = 'block'
-        speciesImage.style.display = 'inline'
+        speciesTable.style.display = 'table'
 
         characterInput.style.display = "none"
-        characterImage.style.display = "none"
+        characterTable.style.display = "none"
 
         document.getElementById('SpeciesID').value = '';
 
@@ -42,7 +42,7 @@ function fetchPeopleInfo(){
     const characterID= document.getElementById('CharacterID').value;
     const result = document.getElementById('result');
 
-    //handle when user enters a non value 
+  
     if(!characterID){
         result.innerHTML = 'Error: Use table below!'
         return
@@ -62,7 +62,7 @@ function fetchPeopleInfo(){
                     <p><strong>Skin Color:</strong> ${characterAttributes.skin_color}</p>
                 `;
             } else {
-             result.innerHTML = `<p>Error: Character not found</p>` // user does not enter range of 1-10
+             result.innerHTML = `<p>Error: Character not found</p>`
             }
         })   
         .catch(err => {
@@ -94,7 +94,7 @@ function fetchSpeciesInfo(){
                     <p><strong>Language:</strong> ${characterAttributes.language}</p>
                 `;
             } else {
-             result.innerHTML = '<p>Error: Species not found</p>'//user does not enter range of 1-10
+             result.innerHTML = '<p>Error: Species not found</p>'
             }
         })   
         .catch(err => {

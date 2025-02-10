@@ -7,9 +7,14 @@ Instructions:
 
 2. Open the project, run html file on live server
 
-3. Enter 1-10 ID based off character/species table of your choosing
+3. Enter 1-83 ID based off character table of your choosing
     a. A string, special character, number out of range, will result an error
 
-4. Click Submit to retrieve data about the character/species
+4. Click Submit to retrieve data about the character
+
+5. click species for second end point
+
+6. Enter 1-37 ID based off character table of your choosing
+    a. A string, special character, number out of range, will result an error
 
 
